@@ -22,8 +22,10 @@ public class PlayerController : MonoBehaviour
         playerObject = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    
+  
+// Update is called once per frame
+void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
             maxSpeed = 5.0f;
         }
 
+       
         //Create a 'float' that will be equal to the players horizontal input
         //float movementValueX = Input.GetAxis("Horizontal");
 
@@ -56,6 +59,6 @@ public class PlayerController : MonoBehaviour
             doubleJump = false;
         }
 
+  
     }
-
 }
